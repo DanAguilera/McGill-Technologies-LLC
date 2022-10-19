@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mcgill Technologies</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <link  rel="stylesheet "href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+  <!-------------HEADER-------------->
+  <section class="sub-header">
+    <nav>
+      <a href="./Index.html"><img src="./assets/Blue Modern Electricity Technology Initial Logo (4).png" class="logo-img"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa-sharp fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="./Index.html">HOME</a></li>
+          <div class="dropdown"><li><a href="">SERVICES</a></li>
+            <div class="dropdown-content">
+              <a href="./FiberServices.html">Fiber Optics</a>
+              <a href="./DataAndNetworking.html">Data And Network</a>
+              <a href="./FireAlarmAndSecurity.html">Fire Alarm and Security</a>
+            </div>
+          </div>
+          <li><a href="AboutUs.html">ABOUT</a></li>
+          <li><a href="ContactUs.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars fa-xl" onclick="showMenu()"></i>
+    </nav>
+    <h1>Contact US</h1>
+</section>
+
+<!-----------CONTACT US------------>
+<section class="location">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212270.54512304923!2d-84.42060395!3d33.76771290000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5045d6993098d%3A0x66fede2f990b630b!2sAtlanta%2C%20GA!5e0!3m2!1sen!2sus!4v1664134872811!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<section class="contact-us">
+   <div class="row">
+      <div class="contact-col">
+         <div>
+           <i class="fa-solid fa-home"></i>
+           <span>
+              <h5>XYZ Road, ABC Building</h5>
+              <p>Atlanta, GA</p>
+           </span>
+         </div>
+         <div>
+          <i class="fa-solid fa-phone"></i>
+          <span>
+             <h5>(678)789-5698</h5>
+             <p>Monday to Friday</p>
+          </span>
+        </div>
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <span>
+             <h5>Mcgilltechnologies2022@gmail.com</h5>
+             <p>Email us your requests</p>
+          </span>
+        </div>
+      </div>
+      <div class="contact-col">
+         <form onsubmit="sendemail(); reset(); return false;">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input  id="email" type="email" name="email" placeholder="Enter your email address" required>
+            <input type="subject" name="subject" placeholder="Enter your subject" required>
+            <textarea rows="8" name="message" placeholder="message" required></textarea>
+            <button type="submit" class="hero-btn blue-btn">Send Message</button>
+          </form>
+      </div>
+   </div>
+</section>
+
+<!---------Footer---------->
+
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est <br>sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus</p>
+    <div class="icons">
+       <i class="fa-brands fa-square-facebook"></i>
+       <i class="fa-brands fa-linkedin"></i>
+       <i class="fa-brands fa-instagram"></i>
+       <i class="fa-brands fa-twitter"></i>
+    </div>
+  </section>
+
+
+<!--JavaScript Tage-->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
